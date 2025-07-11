@@ -1,41 +1,16 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>مقاله</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="gooshe-del.html">بازگشت به فهرست</a>
-    </nav>
-  </header>
+  <h1>مقاله</h1>
+  
+<footer class="footer">
+  <p>© 2025 گم‌نام خاموش فراری — تمام حقوق محفوظ است.</p>
+</footer>
 
-  <main id="article-content">
-    <!-- مقاله از طریق JavaScript بارگذاری می‌شود -->
-  </main>
-
-  <footer>
-    <p>تمام حقوق محفوظ است © گم‌نام خاموش فراری</p>
-  </footer>
-
-  <script src="data.js"></script>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const articleId = params.get('id');
-    const article = articles.find(item => item.id == articleId);
-
-    const container = document.getElementById("article-content");
-    if (article) {
-      container.innerHTML = `
-        <h1>${article.title}</h1>
-        <p><em>${article.date}</em></p>
-        <div>${article.content}</div>
-      `;
-    } else {
-      container.innerHTML = "<p>مقاله پیدا نشد.</p>";
-    }
-  </script>
 </body>
 </html>

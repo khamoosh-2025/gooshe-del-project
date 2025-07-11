@@ -1,1 +1,1 @@
-/* محتویات فایل data.js */
+const articles = [{ title: "کلام پخته", content: "..." }];
