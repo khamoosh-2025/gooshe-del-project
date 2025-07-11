@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>گوشه‌دل</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="data.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>گوشه دل</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header><h1>دل‌نوشته‌ها</h1></header>
-  <main id="articles"></main>
-  <footer><p>نویسنده: گم‌نام خاموش فراری</p></footer>
+  <nav class="navbar">
+    <ul>
+      <li><a href="gooshe-del.html">دل‌نوشته‌ها</a></li>
+      <li><a href="hom.html">خانه</a></li>
+    </ul>
+    <button id="theme-toggle">🌓</button>
+  </nav>
+  <main id="content"></main>
+  <footer>تمامی حقوق محفوظ است © گم‌نام خاموش فراری</footer>
+  <script src="data.js"></script>
+  <script>
+    const container = document.getElementById("content");
+    data.forEach(item => {
+      const el = document.createElement("div");
+      el.className = "article";
+      el.innerHTML = `<h2>${item.title}</h2><p>${item.body}</p>`;
+      container.appendChild(el);
+    });
+    document.getElementById("theme-toggle").onclick = () => {
+      document.body.classList.toggle("dark");
+    };
+  </script>
 </body>
 </html>
