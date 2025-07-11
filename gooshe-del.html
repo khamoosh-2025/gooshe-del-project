@@ -1,33 +1,20 @@
+
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>گوشه دل</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>گوشه دل - فوتر</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <ul>
-      <li><a href="gooshe-del.html">دل‌نوشته‌ها</a></li>
-      <li><a href="hom.html">خانه</a></li>
-    </ul>
-    <button id="theme-toggle">🌓</button>
-  </nav>
-  <main id="content"></main>
-  <footer>تمامی حقوق محفوظ است © گم‌نام خاموش فراری</footer>
-  <script src="data.js"></script>
-  <script>
-    const container = document.getElementById("content");
-    data.forEach(item => {
-      const el = document.createElement("div");
-      el.className = "article";
-      el.innerHTML = `<h2>${item.title}</h2><p>${item.body}</p>`;
-      container.appendChild(el);
-    });
-    document.getElementById("theme-toggle").onclick = () => {
-      document.body.classList.toggle("dark");
-    };
-  </script>
+  <main>
+    <h1>به وب‌سایت گوشه دل خوش آمدید</h1>
+    <p>اینجا محل دل‌نوشته‌ها و آرامش ذهن است...</p>
+  </main>
+
+  <footer>
+    <p>© 2025 گم‌نام خاموش فراری | تمامی حقوق محفوظ است</p>
+    <p>ارتباط: <a href="mailto:gu.khamoosh@gmail.com">gu.khamoosh@gmail.com</a></p>
+  </footer>
 </body>
 </html>
