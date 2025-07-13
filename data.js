@@ -1,1 +1,1 @@
-const articles = [{ title: "کلام پخته", content: "..." }];
+const articles = [{title: 'کلام پخته', content: '...'}];
